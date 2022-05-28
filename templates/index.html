@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Estilos para la disposición del pie de página */
+        .pie-pagina {
+            display:grid;
+            grid-template-columns: repeat(3, auto);
+            padding: 30px;
+            column-gap: 15px;
+            align-content: center;
+        }
+
+        /* Estilos para la disposición del menú de navegación */
+        .nav {
+            display: grid;
+            grid-template-rows: auto auto;
+            
+        }
+
+        /* Estilos para la disposición de la sección de contacto */
+        .contacto {
+            display: grid;
+            grid-template-rows: auto auto;
+            
+        }
+
+        /* Estilos para la disposición del formulario*/
+        .formulario {
+            grid-template-columns: repeat(2, auto);
+            
+        }
+
+        /* Estilos para el tamaño de las etiquetas de título h4*/
+        h4 {
+            font-size: 13px;
+        }
+    </style>
+    <title>TAREA_1_JONATHAN_ORTEGA</title>
+</head>
+
+<body style="color:rgb(12, 36, 28);">
+
+    <!--NAVBAR-->
+    <!--head donde encontramos el logo y nombre-->
+    <center>
+        <IMG SRC="https://banos-ecuador.com/lib/img/logo-header.png?t=21.12.20.3" ALIGN=TOP WIDTH=150 HEIGHT=150>
+        <h1>¡¡¡UN PEDAZO DE CIELO Y ES BAÑOS!!!</h1>
+    </center>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">Principal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        TURISMO
+                    </a>
+                    <!--Creamos la lista desplegable-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">SAN VICENTE</a>
+                        <a class="dropdown-item" href="#">LUNA RUNTÚN</a>
+                        <a class="dropdown-item" href="#">PAILÓN DEL DIABLO</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        VIAJES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Río Verde</a>
+                        <a class="dropdown-item" href="#">Volcán Tungurahua</a>
+                        <a class="dropdown-item" href="#">Kayak en el río Pastaza</a>
+                        <a class="dropdown-item" href="#">Mirador de la Virgen</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        HOTELES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">El Pedron Hotelo</a>
+                        <a class="dropdown-item" href="#">La Cumbre By Team</a>
+                        <a class="dropdown-item" href="#">Hotel de mi Pueblo</a>
+                        <a class="dropdown-item" href="#">Luna Volcán</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        DISCOTECAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Volcán Bar Disc</a>
+                        <a class="dropdown-item" href="#">Leprechaun Bar</a>
+                        <a class="dropdown-item" href="#">Faraón Bar Disco</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        FOTOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Erupción del volcán</a>
+                        <a class="dropdown-item" href="#">Fistas de Baños</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        TRANSPORTE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Coop. Baños</a>
+                        <a class="dropdown-item" href="#">Copp. Expreso Baños</a>
+                        <a class="dropdown-item" href="#">Coop. Amazonas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        TESTIMONIOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Lonjevidad</a>
+                        <a class="dropdown-item" href="#">Adultos</a>
+                        <a class="dropdown-item" href="#">Jóvenes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Te Esperamos....</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-dark my-5 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <!--Carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.geotoursbanios.com/archivos/destinos/DJI_0483-2.jpg" class="d-block w-100"
+                    alt="ortegaJ">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.geotoursbanios.com/archivos/blogs/0fcdb450-4d4f-40bd-8b3a-303774d95de2.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.geotoursbanios.com/archivos/destinos/DJI_0483-2.jpg" class="d-block w-100"
+                    alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!--Sección de blockquote-->
+
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p>Tierra de Milagros y personas amables.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Nosotros somos... <cite title="Source Title">Baños de Agua Santa</cite>
+        </figcaption>
+    </figure>
+
+    <center>
+        <div class="nocion">
+            <img class="izquierda"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkb75esiFuk-kUD0WXhRXPC77JnNoTWxjuVEGi3veede8sris9uQTaMpPwuMusGHRfeA&usqp=CAU">
+            <div class="reset"></div>
+        </div>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>Esta tierra de bellas montañas y ríos culebreros son el lugar que me vio nacer un mes de Febrero de
+                    199...</p>
+            </blockquote>
+
+        </figure>
+    </center>
+    </blockquote>
+
+
+    <!--Se agregan cards con imágenes y texto, se trabaja con una clase que presenta el texto de color negro y fondo amarillo-->
+    <div class="card-group">
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn2.civitatis.com/ecuador/quito/galeria/pailon-diablo-banos-agua-santa.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Aventura</h5>
+                <p class="card-text">La mejor experiencia que podras experimentar en tu vida esta aqui!!!
+                    </p>
+                <a href="#" class="btn btn-primary">Visitar el sitio.</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://media.iatiseguros.com/wp-content/uploads/2017/08/que-hacer-en-ba%C3%B1os-columpio-casa-de-arbol.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tranquilidad</h5>
+                <p class="card-text">Sentir que topas el cielo con las manos y dejar que la mente y cuerpo descanse.. es lo que Baños te brinda
+                    </p>
+                <a href="#" class="btn btn-primary">Visitar el sitio.</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://gk.city/wp-content/uploads/2021/01/banos-de-agua-santa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cultura</h5>
+                <p class="card-text">Las costumbres y tradiciones son los valores que caracterizan a cada habitante de este pedacito de cielo. 
+                    </p>
+                <a href="#" class="btn btn-primary">Visitar el sitio.</a>
+            </div>
+        </div>
+        <!-- **********PARTE "E"  BUTTONS******** -->
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">PAQUETES DE TURISMO</th>
+                    <th scope="col">RESERVAR</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">BAÑOS- RÍO VERDE- SHELL</th>
+                    <td><button type="button" class="btn btn-warning">Ingresar</button></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">BAÑOS- PELILEO- PATATE</th>
+                    <td><button type="button" class="btn btn-warning">Ingresar</button></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">BAÑOS- AMBATO- RIOBAMBA</th>
+                    <td><button type="button" class="btn btn-warning">Ingresar</button></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">QUITO- BAEZA- TENA- BAÑOS</th>
+                    <td><button type="button" class="btn btn-warning">Ingresar</button></td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- pie de pagina general -->
+        <center>
+        <div class="pie-pagina" >
+
+            <!-- Navegacion del pie de página -->
+           
+            <div class="nav p-3 mb-2 bg-warning text-dark">
+                <div>
+                    <h2>Navegación </h2>
+                </div>
+
+                <div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Galaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Paquetes de viajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-secondary">Tours en la ciudad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección de contactos -->
+            <div class="contacto p-3 mb-2 bg-warning text-dark">
+                <div>
+                    <h2>Contáctanos</h2>
+                </div>
+
+                <div>
+                    <h3 class="text-secondary">Teléfono</h3>
+                    <h4>0967983499</h4>
+                    <h3 class="text-secondary">Correo</h3>
+                    <h4>jaortegab.91@gmail.com</h4>
+                    <h3 class="text-secondary">Dirección</h3>
+                    <h4 class="text-left">Universidad de las Fuerzas Armadas ESPE</h4>
+
+                </div>
+            </div>
+
+            <!-- Sección de formulario -->
+            
+            <div class="formulario ">
+
+                <div>
+                    <h2>Escríbenos</h2>
+                </div>
+
+                <div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escríbenos</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
