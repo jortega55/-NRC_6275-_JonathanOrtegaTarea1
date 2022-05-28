@@ -4,10 +4,8 @@ from flask import Flask, redirect, render_template, request, url_for, flash
 #Objeto para inicilizar la aplicacion
 #1. nombre por defecto
 #2. ruta donde esta los templates o nombre de la carpeta
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__)
 
-#Clave secreta de la aplicacion
-app.secret_key = '123456789'
 
 #Controlador de la ruta por defecto
 @app.route('/')

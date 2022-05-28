@@ -12,7 +12,7 @@
     <style>
         /* Estilos para la disposición del pie de página */
         .pie-pagina {
-            display:grid;
+            display: grid;
             grid-template-columns: repeat(3, auto);
             padding: 30px;
             column-gap: 15px;
@@ -23,20 +23,20 @@
         .nav {
             display: grid;
             grid-template-rows: auto auto;
-            
+
         }
 
         /* Estilos para la disposición de la sección de contacto */
         .contacto {
             display: grid;
             grid-template-rows: auto auto;
-            
+
         }
 
         /* Estilos para la disposición del formulario*/
         .formulario {
             grid-template-columns: repeat(2, auto);
-            
+
         }
 
         /* Estilos para el tamaño de las etiquetas de título h4*/
@@ -216,25 +216,29 @@
             <div class="card-body">
                 <h5 class="card-title">Aventura</h5>
                 <p class="card-text">La mejor experiencia que podras experimentar en tu vida esta aqui!!!
-                    </p>
+                </p>
                 <a href="#" class="btn btn-primary">Visitar el sitio.</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="https://media.iatiseguros.com/wp-content/uploads/2017/08/que-hacer-en-ba%C3%B1os-columpio-casa-de-arbol.jpg" class="card-img-top" alt="...">
+            <img src="https://media.iatiseguros.com/wp-content/uploads/2017/08/que-hacer-en-ba%C3%B1os-columpio-casa-de-arbol.jpg"
+                class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Tranquilidad</h5>
-                <p class="card-text">Sentir que topas el cielo con las manos y dejar que la mente y cuerpo descanse.. es lo que Baños te brinda
-                    </p>
+                <p class="card-text">Sentir que topas el cielo con las manos y dejar que la mente y cuerpo descanse.. es
+                    lo que Baños te brinda
+                </p>
                 <a href="#" class="btn btn-primary">Visitar el sitio.</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="https://gk.city/wp-content/uploads/2021/01/banos-de-agua-santa.jpg" class="card-img-top" alt="...">
+            <img src="https://gk.city/wp-content/uploads/2021/01/banos-de-agua-santa.jpg" class="card-img-top"
+                alt="...">
             <div class="card-body">
                 <h5 class="card-title">Cultura</h5>
-                <p class="card-text">Las costumbres y tradiciones son los valores que caracterizan a cada habitante de este pedacito de cielo. 
-                    </p>
+                <p class="card-text">Las costumbres y tradiciones son los valores que caracterizan a cada habitante de
+                    este pedacito de cielo.
+                </p>
                 <a href="#" class="btn btn-primary">Visitar el sitio.</a>
             </div>
         </div>
@@ -272,72 +276,84 @@
         </table>
 
         <!-- pie de pagina general -->
-        <center>
-        <div class="pie-pagina" >
-
-            <!-- Navegacion del pie de página -->
+        
            
-            <div class="nav p-3 mb-2 bg-warning text-dark">
-                <div>
-                    <h2>Navegación </h2>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Navegacion del pie de página -->
+
+                            <div class="nav p-3 mb-2 bg-warning text-dark">
+                                <div>
+                                    <h2>Navegación </h2>
+                                </div>
+
+                                <div>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-secondary" href="#">Galaria</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-secondary" href="#">Paquetes de viajes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled text-secondary">Tours en la ciudad</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled text-secondary">Fiestas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Sección de contactos -->
+                            <div class="contacto p-3 mb-2 bg-warning text-dark">
+                                <div>
+                                    <h2>Contáctanos</h2>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-secondary">Teléfono</h3>
+                                    <h4>0967983499</h4>
+                                    <h3 class="text-secondary">Correo</h3>
+                                    <h4>jaortegab.91@gmail.com</h4>
+                                    <h3 class="text-secondary">Dirección</h3>
+                                    <h4 class="text-left">Universidad de las Fuerzas Armadas ESPE</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Sección de formulario -->
+
+                            <div class="formulario ">
+
+                                <div>
+                                    <h2>Escríbenos</h2>
+                                </div>
+
+                                <div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Escríbenos</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">Galaria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">Paquetes de viajes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled text-secondary">Tours en la ciudad</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Sección de contactos -->
-            <div class="contacto p-3 mb-2 bg-warning text-dark">
-                <div>
-                    <h2>Contáctanos</h2>
-                </div>
-
-                <div>
-                    <h3 class="text-secondary">Teléfono</h3>
-                    <h4>0967983499</h4>
-                    <h3 class="text-secondary">Correo</h3>
-                    <h4>jaortegab.91@gmail.com</h4>
-                    <h3 class="text-secondary">Dirección</h3>
-                    <h4 class="text-left">Universidad de las Fuerzas Armadas ESPE</h4>
-
-                </div>
-            </div>
-
-            <!-- Sección de formulario -->
             
-            <div class="formulario ">
-
-                <div>
-                    <h2>Escríbenos</h2>
-                </div>
-
-                <div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Escríbenos</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </center>
+        
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
